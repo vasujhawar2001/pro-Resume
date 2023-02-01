@@ -1,2 +1,2 @@
-# pro-Resume
+# my-Resume
 Resume on Latex

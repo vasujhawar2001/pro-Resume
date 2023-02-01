@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Pro-Resume - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Vasu Jhawar (http://vasujhawar.com)
+%
+% Original repository:
+% https://github.com/vasujhaar2001/pro-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Vasu}{Jhawar}{ \urlstyle{same}\href{http://vasujhawar.com}{vasujhawar.com}\\
+\href{mailto:vasujhwr@outlook.com}{vasujhwr@outlook.com} | +91-8458916764
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{SRM UNIVERSITY}
+\descript{BTech in Computer Science}
+\location{Grad. May 2022 | Chennai, TN}
+\href{https://drive.google.com/file/d/1ApRnYdoRtfoapCfFZCgwWubIP0cAW0eD/view?usp=share_link}{College of Engineering}\\
+Kattankulathur Campus\\
+\href{https://drive.google.com/file/d/1rq4FKQyNayOcX84-dDo-G0_RZiSQOdYV/view?usp=share_link}{ \bf Cum. GPA: 8.71 / 10}
+\sectionsep
+
+\subsection{Delhi Public School}
+\descript{physics chemistry mathematics}
+\location{Grad. May 2018 | Bhopal, MP}
+\href{https://drive.google.com/file/d/1x2eQDK6MQM5oL_1PCzpS03FXclnBQqGh/view?usp=share_link}{School of Science}\\
+\href{https://drive.google.com/file/d/1xZmpfO4BpuHJuhc5C4YJIXDSf8b10sZq/view?usp=share_link}{\bf Cum Per: 90.6}
+\sectionsep
+
+\subsection{Delhi Public School}
+\location{Grad. May 2016 | Bhopal, MP}
+\href{https://drive.google.com/file/d/1B54NoQXOFkvff8jHgBJ4f3W8yRxlJTO5/view?usp=share_link}{\bf CGPA: 9.2 / 10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+
+\subsection{Undergraduate}
+Advanced Calculus \& Complex Anly.\\
+Programming for Problem Solving \\
+Data Structures \\
+Object Oriented and Design Prog. \\
+Operating Systems \\
+Design and Analysis of Algorithms \\
+Computer Networks + Practicum\\
+{\footnotesize \textit{\textbf{(Research Asst. \& Minor Project) }}}\\
+Database Management Systems\\
+Compiler Design\\
+Artificial Intelligence \\
+Computer Communications\\
+Wireless \& Mobile Communication
+Robotics Engineering \& Applications
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\descript{Languages:}
+\textbullet{} Advance: Java\\
+\textbullet{} Intermediate: C++, Python3\\
+\textbullet{} Novice: JavaScript, Kotlin\\
+\descript{Technologies}
+\textbullet{} HTML \textbullet{} CSS \textbullet{} SQL  \textbullet{} MongoDB \textbullet{} AJAX \textbullet{} NodeJS \textbullet{} \LaTeX \\
+\descript{Tools:}
+\textbullet{} Git \textbullet{} GitHub \textbullet{} Linux  \textbullet{Windows} \textbullet{} MySQL \\
+\descript{Frameworks \& Libraries:}
+\textbullet{} Express \textbullet{} ReactJS \\
+% AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{WeMakeDevs}
+\descript{| Teaching Assistant}
+\location{Oct 2022 - Present | Remote}
+\sectionsep
+
+\runsubsection{Recommendation System}
+\descript{| Research Work + Product}
+\location{Dec 2021 – May 2022 | Chennai, TN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Google}
+\descript{| Software Engineering Intern }
+\location{May 2013 – Aug 2013 | Mountain View, CA}
+\begin{tightemize}
+\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+\item Created a backbone.js-like framework for the Captions editor.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Phabricator}
+\descript{| Open Source Contributor \& Team Leader}
+\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+\begin{tightemize}
+\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+\item I created the Meme generator and more in PHP and Shell.
+\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Cornell Robot Learning Lab}
+\descript{| Researcher}
+\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\sectionsep
+
+\runsubsection{Cornell Phonetics Lab}
+\descript{| Head Undergraduate Researcher}
+\location{Mar 2012 – May 2013 | Ithaca, NY}
+Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2014	     & top 52/2500  & KPCB Engineering Fellow\\
+2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+2013	     & National  & Jump Trading Challenge Finalist\\
+2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
